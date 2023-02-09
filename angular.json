@@ -23,6 +23,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -94,8 +95,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "incidencias:build:production",
+            "firebaseProject": "incidencias-6088a",
+            "firebaseHostingSite": "incidencias-6088a"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "925f7915-75bc-477a-86f1-35b432f8f796"
   }
 }
